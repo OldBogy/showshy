@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.List;
 
@@ -18,10 +19,10 @@ public class UserController {
     @Autowired
     private UserService userService;
 
+    @ResponseBody
     @RequestMapping(value = "/getAllUser", method = RequestMethod.GET)
-    public String getUserList(Model model){
+    public List<User> getUserList(){
         List<User> list = userService.getUserList();
-        model.addAttribute("list",list);
-        return "showUsers";
+        return list;
     }
 }

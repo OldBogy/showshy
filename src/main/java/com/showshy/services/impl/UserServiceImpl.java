@@ -21,16 +21,16 @@ public class UserServiceImpl implements UserService {
         return list;
     }
 
-    public User getUserById(String userId) {
-        return userMapper.getUserById(userId);
+    public User getUserById(String id) {
+        return userMapper.getUserById(id);
     }
 
-    public void updateUserEmailById(String userId, String sex) {
-        userMapper.updateUserEmailById(userId, sex);
+    public void updateUserEmailById(String id, String sex) {
+        userMapper.updateUserEmailById(id, sex);
     }
 
-    public void deleteUserById(String userId) {
-        userMapper.deleteUserById(userId);
+    public void deleteUserById(String id) {
+        userMapper.deleteUserById(id);
     }
 
     public void insertUser(User user) {

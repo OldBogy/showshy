@@ -7,7 +7,7 @@ apply plugin: 'war'
 sourceCompatibility = 1.8
 
 repositories {
-    mavenCentral()
+    maven{url "http://maven.aliyun.com/nexus/content/groups/public"}
 }
 
 dependencies {
@@ -29,6 +29,10 @@ dependencies {
     compile group: 'org.apache.commons', name: 'commons-dbcp2', version: '2.1.1'
 // https://mvnrepository.com/artifact/javax.servlet.jsp.jstl/jstl
     compile group: 'javax.servlet.jsp.jstl', name: 'jstl', version: '1.2'
+// https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.8.6'
+// https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.8.6'
 
 
 }

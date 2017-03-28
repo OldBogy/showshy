@@ -18,9 +18,9 @@ public class MyBatisConfig {
     public BasicDataSource dataSource() {
         BasicDataSource dataSource = new BasicDataSource();
         dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-        dataSource.setUrl("jdbc:mysql://localhost:3306/db_ssh?useUnicode=true&characterEncoding=utf-8");//防止乱码
+        dataSource.setUrl("jdbc:mysql://127.0.0.1:3306/db_ssh?serverTimezone=UTC");//防止乱码
         dataSource.setUsername("root");
-        dataSource.setPassword("sd201303");
+        dataSource.setPassword("123");
         dataSource.setInitialSize(5);
         dataSource.setMaxTotal(10);
         return dataSource;
