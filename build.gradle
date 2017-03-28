@@ -27,6 +27,8 @@ dependencies {
     compile group: 'mysql', name: 'mysql-connector-java', version: '6.0.5'
 // https://mvnrepository.com/artifact/org.apache.commons/commons-dbcp2
     compile group: 'org.apache.commons', name: 'commons-dbcp2', version: '2.1.1'
+// https://mvnrepository.com/artifact/javax.servlet.jsp.jstl/jstl
+    compile group: 'javax.servlet.jsp.jstl', name: 'jstl', version: '1.2'
 
 
 }
