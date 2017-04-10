@@ -26,6 +26,7 @@
           <element id="library" level="project" name="Gradle: org.apache.commons:commons-dbcp2:2.1.1" />
           <element id="library" level="project" name="Gradle: javax.servlet.jsp.jstl:jstl:1.2" />
           <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.8.6" />
+          <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.8.6" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-aop:4.3.6.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-beans:4.3.6.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-context:4.3.6.RELEASE" />
@@ -35,8 +36,7 @@
           <element id="library" level="project" name="Gradle: org.springframework:spring-tx:4.3.6.RELEASE" />
           <element id="library" level="project" name="Gradle: org.apache.commons:commons-pool2:2.4.2" />
           <element id="library" level="project" name="Gradle: commons-logging:commons-logging:1.2" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.8.6/c43de61f74ecc61322ef8f402837ba65b0aa2bf4/jackson-databind-2.8.6.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.8.0/45b426f7796b741035581a176744d91090e2e6fb/jackson-annotations-2.8.0.jar" />
+          <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.8.0" />
         </element>
       </element>
     </root>

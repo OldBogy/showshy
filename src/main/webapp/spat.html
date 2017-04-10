@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+    <script>
+
+        $.ajax({
+            url: "http://www.gzjponline.com/Jp/GetClassRooms", //请求的url
+            dataType : "jsonp",
+            //传递给请求处理程序或页面的，用以获得jsonp回调函数名的参数名(一般默认为:callback)
+            jsonp: function (tt) {
+                console.log(tt);
+            },
+            //自定义的jsonp回调函数名称"jsonpCallback"，返回的json也必须有这个函数名称
+            jsonpCallback:function (ttt) {
+                console.log(ttt);
+            },
+            success : function(json){
+                if(json.flag=="successfully")
+                { console.log("request successfully");}
+            },
+            error: function(xhr,status,error)
+            { console.log(xhr); }
+        });
+    </script>
+</body>
+</html>
